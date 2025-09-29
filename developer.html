@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Developer — HemantGamerzYT</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<h1>Developer</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="minecraft.html">Minecraft Server</a>
+<a href="developer.html">Developer</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<section>
+<h2>Contribute / Contact</h2>
+<p>If you're a developer, plugin author, or designer and want to help, join Discord and message <strong>HemantGamerzYT</strong>.</p>
+
+<h3>How to contribute</h3>
+<ul>
+<li>Help with website (HTML/CSS/JS) — fork the repo and open a PR.</li>
+<li>Plugin development (Java / Spigot / Paper) — share code and test on a staging server.</li>
+<li>Moderation — apply in Discord.</li>
+</ul>
+
+<h3>Useful links</h3>
+<p><a href="https://discord.gg/RWpVR5N4uk">Discord</a> • <a href="https://youtube.com/@hemantgamerzyt?si=2PYbnTBNyBPMx4lC">YouTube</a></p>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year3"></span> HemantGamerzYT</p>
+</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+css/style.css
+:root{--accent:#1e90ff;--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071126 0%,#0b1220 100%);color:#e6eef6;margin:0}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.site-header{background:transparent;padding:18px 0}
+.site-header h1{margin:0 0 8px;font-size:28px}
+nav a{color:var(--muted);margin-right:12px;text-decoration:none}
+.hero{background:rgba(255,255,255,0.02);padding:28px;border-radius:12px;margin-top:18px}
+.hero h2{margin-top:0}
+.buttons{margin-top:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;background:var(--accent);color:white}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.08)}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.features article{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
+.site-footer{padding:16px 0;margin-top:32px;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+.link{color:var(--accent);text-decoration:none}
+@media(max-width:700px){.features{grid-template-columns:1fr}}
+code{background:#0b1220;padding:4px 6px;border-radius:6px}
+
+
+js/script.js
+// small helper script for year
+document.addEventListener('DOMContentLoaded',()=>{
+const y=new Date().getFullYear();
+const el1=document.getElementById('year');
+const el2=document.getElementById('year2');
+const el3=document.getElementById('year3');
+if(el1) el1.textContent=y;
+if(el2) el2.textContent=y;
+if(el3) el3.textContent=y;
+});
+
+
+Quick deploy steps (GitHub Pages)
+Create a new public repository on GitHub (e.g., hemantgamerzyt-site).
+Clone it locally, create the file structure above and paste the file contents.
+git add . → git commit -m "Initial site" → git push origin main.
+In the repo on GitHub: Settings → Pages → select main branch and / (root) folder → Save. Your site will be available at https://<username>.github.io/<repo>/ (or at a custom domain if configured).
+
+If you want, I can:
+
+generate the same project as a ready ZIP file,
+create a README.md for the repo,
+or produce a lighter single-file version (all HTML/CSS/JS in one index.html).
+Tell me which of those you'd like next and I'll add it directly.
