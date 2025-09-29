@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome To HemantGamerzYT</title>
+  <meta name="description" content="HemantGamerzYT - Minecraft servers, developer, survival, lifesteal & more. Join Discord and YouTube!" />
+  <style>
+    /* Reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body,#app{height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#fff}
+
+    /* Animated gradient background */
+    :root{
+      --bg-1: #0f172a;
+      --bg-2: #0b1220;
+    }
+    .bg-wrap{
+      position:fixed;inset:0;z-index:-2;overflow:hidden;
+      background:linear-gradient(120deg,var(--bg-1),#07102a 25%,#001026 55%,#0b1b3a 100%);
+      animation: hueShift 18s ease-in-out infinite alternate;
+    }
+    @keyframes hueShift{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(45deg)}}
+
+    /* Subtle animated blobs */\    
+    .blobs{position:fixed;inset:0;z-index:-1;pointer-events:none}
+    .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.45;mix-blend-mode:overlay}
+    .b1{width:600px;height:600px;background:radial-gradient(circle at 30% 30%,#6ee7b7,#3b82f6);left:-10%;top:-10%;animation:move1 14s ease-in-out infinite}
+    .b2{width:500px;height:500px;background:radial-gradient(circle at 60% 40%,#f472b6,#7c3aed);right:-8%;top:10%;animation:move2 16s ease-in-out infinite}
+    .b3{width:700px;height:700px;background:radial-gradient(circle at 40% 60%,#60a5fa,#34d399);left:20%;bottom:-20%;animation:move3 20s ease-in-out infinite}
+    @keyframes move1{0%{transform:translate(0,0)}50%{transform:translate(40px,60px)}100%{transform:translate(0,0)}}
+    @keyframes move2{0%{transform:translate(0,0)}50%{transform:translate(-40px,-40px)}100%{transform:translate(0,0)}}
+    @keyframes move3{0%{transform:translate(0,0)}50%{transform:translate(30px,-50px)}100%{transform:translate(0,0)}}
+
+    /* Layout */
+    .container{max-width:1100px;margin:0 auto;padding:48px 20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#1e3a8a,#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;box-shadow:0 8px 30px rgba(2,6,23,.6)}
+    h1{font-size:28px;line-height:1.05}
+    p.lead{opacity:.9}
+
+    /* Buttons */
+    .ctas{display:flex;gap:12px}
+    .btn{background:rgba(255,255,255,.06);padding:10px 16px;border-radius:10px;color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.06);backdrop-filter: blur(6px)}
+    .btn.primary{background:linear-gradient(90deg,#06b6d4,#3b82f6);color:#021124;border:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,.04);box-shadow:0 8px 32px rgba(2,6,23,.6)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .feat{padding:12px;border-radius:10px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.02)}
+
+    /* Status panel */
+    .status{padding:14px;border-radius:10px;background:linear-gradient(90deg,rgba(0,0,0,.15),rgba(255,255,255,.03));}
+    .server-item{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.04)}
+    .server-item:last-child{border-bottom:none}
+
+    /* Footer */
+    footer{margin-top:44px;padding:20px 0;text-align:center;opacity:.85}
+
+    /* Mobile */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .container{padding:28px 16px}
+      h1{font-size:24px}
+    }
+
+    /* subtle floating icon animation */
+    .pulse{animation:pulse 2.8s infinite}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+  </style>
+</head>
+<body>
+  <div class="bg-wrap"></div>
+  <div class="blobs" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <div id="app">
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">HG</div>
+          <div>
+            <h1>Welcome To <strong>HemantGamerzYT</strong></h1>
+            <p class="lead">Minecraft developer — Survival, Lifesteal & many gamemodes. Join our community!</p>
+          </div>
+        </div>
+
+        <nav class="ctas">
+          <a class="btn pulse" href="https://discord.gg/RWpVR5N4uk" target="_blank" rel="noreferrer noopener">Join Discord</a>
+          <a class="btn" href="https://youtube.com/@hemantgamerzyt?si=2PYbnTBNyBPMx4lC" target="_blank" rel="noreferrer noopener">YouTube</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <div class="card">
+            <h2>Our Minecraft Servers</h2>
+            <p style="margin-top:8px;">We build and maintain fast, fun server experiences — oriented around community and custom gameplay.</p>
+
+            <div class="features">
+              <div class="feat"><strong>Survival</strong><br><small>Vanilla-inspired but polished</small></div>
+              <div class="feat"><strong>Lifesteal</strong><br><small>High-stakes PvP with progression</small></div>
+              <div class="feat"><strong>Mini-Games</strong><br><small>Events & custom maps</small></div>
+              <div class="feat"><strong>Developer Tools</strong><br><small>Plugins, builds & API access</small></div>
+            </div>
+
+            <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
+              <a class="btn primary" href="https://discord.gg/RWpVR5N4uk" target="_blank" rel="noreferrer noopener">Join Discord</a>
+              <a class="btn" href="#servers">Server Status</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:14px;">
+            <h3>Quick Info</h3>
+            <div style="margin-top:8px;" class="status">
+              <div class="server-item">
+                <div><strong>IP</strong> <small>in1.darkmc.space:25566</small></div>
+                <div><span>Online</span></div>
+              </div>
+              <div class="server-item">
+                <div><strong>Mode</strong> <small>Survival | Lifesteal</small></div>
+                <div><strong>Maps</strong></div>
+              </div>
+              <div class="server-item">
+                <div><strong>Developer</strong> <small>HemantGamerzYT</small></div>
+                <div><strong>Custom plugins</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 id="servers">Status & Announcements</h3>
+            <p style="margin-top:8px;">No announcements right now — this panel can be updated from the GitHub repo by editing the HTML or connecting a CMS later.</p>
+            <div style="margin-top:12px;">
+              <strong>Live Chat</strong>
+              <p style="font-size:13px;opacity:.9;margin-top:8px;">For help, head to Discord and say hi — staff are active there.</p>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:14px;">
+            <h4>Promote</h4>
+            <p style="margin-top:8px;font-size:14px;">Share this page: <br><input style="width:100%;margin-top:8px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:transparent;color:#fff" value="https://your-username.github.io/" id="shareInput"></p>
+            <button class="btn" style="margin-top:10px;" onclick="copyShare()">Copy Link</button>
+          </div>
+        </aside>
+      </section>
+
+      <footer>
+        <small>Built with ♥ by <strong>HemantGamerzYT</strong> • Host on GitHub Pages</small>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // small helper: copy link
+    function copyShare(){
+      const el = document.getElementById('shareInput');
+      el.select();el.setSelectionRange(0,99999);
+      navigator.clipboard?.writeText(el.value).then(()=>alert('Link copied!'))
+    }
+
+    // Optional tiny particle overlay (performance-friendly)
+    (function(){
+      const canvas = document.createElement('canvas');
+      canvas.style.position='fixed';canvas.style.left=0;canvas.style.top=0;canvas.style.width='100%';canvas.style.height='100%';canvas.style.pointerEvents='none';canvas.style.zIndex='-1';
+      document.body.appendChild(canvas);
+      const ctx = canvas.getContext('2d');
+      let w,h; function resize(){w=canvas.width=innerWidth;h=canvas.height=innerHeight}
+      addEventListener('resize',resize);resize();
+      const particles = Array.from({length:24}).map(()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.6+0.6,s:Math.random()*0.4+0.05}));
+      function draw(){ctx.clearRect(0,0,w,h);for(const p of particles){p.x += Math.cos(p.r+performance.now()*0.0002)*0.6; p.y += Math.sin(p.r+performance.now()*0.0003)*0.4; if(p.x> w+20) p.x=-20; if(p.x<-20)p.x=w+20; if(p.y>h+20)p.y=-20; if(p.y<-20)p.y=h+20; ctx.beginPath(); ctx.fillStyle='rgba(255,255,255,'+p.s*0.18+')'; ctx.arc(p.x,p.y,p.r*6,0,Math.PI*2); ctx.fill()} requestAnimationFrame(draw)}
+      draw();
+    })();
+  </script>
+</body>
+</html>
