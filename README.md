@@ -1,3 +1,0 @@
-/my-website
- ├── index.html
- ├── style.css
