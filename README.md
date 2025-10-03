@@ -1,6 +1,8 @@
 # HemantGamerzYT Website
-This is a simple website hosted on GitHub Pages.
+
+This is a simple **dark + blue themed website** hosted on GitHub Pages.
 
 ## Links
-- Discord: [Join Here](https://discord.gg/ShypaUb4MV)
-- YouTube: [Subscribe Here](https://www.youtube.com/@HemantGamerzYT)
+- [Join Discord](https://discord.gg/ShypaUb4MV)
+- [Subscribe YouTube](https://www.youtube.com/@HemantGamerzYT)
+
