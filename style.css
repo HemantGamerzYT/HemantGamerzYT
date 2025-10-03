@@ -12,6 +12,9 @@ body {
 
 header {
     padding: 50px 20px;
+    background-color: rgba(0,0,0,0.3); /* semi-transparent background for header */
+    border-radius: 10px;
+    display: inline-block;
 }
 
 header h1 {
@@ -53,6 +56,10 @@ header p {
 
 section.links, section.contact {
     margin: 40px 0;
+    background-color: rgba(0,0,0,0.3); /* semi-transparent section */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 footer {
