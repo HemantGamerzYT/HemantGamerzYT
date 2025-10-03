@@ -1,86 +1,59 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* General styles */
 body {
-  background: linear-gradient(135deg, #0a0f1f, #111a33);
-  color: #f0f0f0;
-  text-align: center;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
 }
 
 header {
-  margin: 40px 0;
+    padding: 50px 20px;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #00aaff;
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-.highlight {
-  color: #00ffcc;
+header p {
+    font-size: 1.2em;
 }
 
-.tagline {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  color: #ccc;
-}
-
-main {
-  margin: 40px auto;
-  max-width: 800px;
-}
-
-h2 {
-  color: #00aaff;
-  margin-bottom: 15px;
-}
-
-.about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-.links .buttons {
-  margin-top: 20px;
-}
-
+/* Buttons */
 .btn {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    color: white;
 }
 
 .discord {
-  background: #5865f2;
+    background-color: #7289da;
 }
 
 .discord:hover {
-  background: #4752c4;
+    background-color: #5b6eae;
 }
 
 .youtube {
-  background: #ff0000;
+    background-color: #ff0000;
 }
 
 .youtube:hover {
-  background: #cc0000;
+    background-color: #cc0000;
+}
+
+section.links, section.contact {
+    margin: 40px 0;
 }
 
 footer {
-  margin-top: 50px;
-  font-size: 0.9rem;
-  color: #999;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3);
 }
