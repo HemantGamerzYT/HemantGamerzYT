@@ -1,92 +1,86 @@
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Animated Dark + Blue Gradient Background */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  height: 100vh;
-  background: linear-gradient(270deg, #0a0a1f, #001f3f, #004080, #0066cc);
-  background-size: 800% 800%;
-  animation: gradientBG 20s ease infinite;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Gradient Animation */
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Overlay */
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 20px;
+  background: linear-gradient(135deg, #0a0f1f, #111a33);
+  color: #f0f0f0;
   text-align: center;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 30px rgba(0, 153, 255, 0.5);
+  padding: 20px;
 }
 
-/* Title */
+header {
+  margin: 40px 0;
+}
+
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: white;
+  font-size: 3rem;
+  color: #00aaff;
 }
 
 .highlight {
-  color: #4da6ff;
-  text-shadow: 0 0 15px #4da6ff;
+  color: #00ffcc;
 }
 
-/* Tagline */
 .tagline {
   font-size: 1.2rem;
-  color: #b3d9ff;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  color: #ccc;
 }
 
-/* Links */
-.links {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+main {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+h2 {
+  color: #00aaff;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.links .buttons {
+  margin-top: 20px;
 }
 
 .btn {
-  padding: 12px 25px;
-  border-radius: 30px;
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
   text-decoration: none;
+  color: white;
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
-  font-size: 1rem;
+  transition: 0.3s;
 }
 
-/* Discord Button */
-.btn.discord {
-  background: #5865F2;
-  color: white;
-  box-shadow: 0 0 15px rgba(88,101,242,0.8);
+.discord {
+  background: #5865f2;
 }
 
-/* YouTube Button */
-.btn.youtube {
-  background: #FF0000;
-  color: white;
-  box-shadow: 0 0 15px rgba(255,0,0,0.8);
+.discord:hover {
+  background: #4752c4;
 }
 
-/* Hover Effect */
-.btn:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
+.youtube {
+  background: #ff0000;
+}
+
+.youtube:hover {
+  background: #cc0000;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #999;
 }
